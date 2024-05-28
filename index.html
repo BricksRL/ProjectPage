@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="BricksRL: A Platform for Democratizing Robotics and
+        Reinforcement Learning Research and Education with LEGO.">
+    <meta name="keywords" content="BricksRL, Robotics, LEGO, Reinforcement Learning">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BricksRL
+    </title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PYVRSFMDRL');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="icon" href="./static/images/favicon.svg">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-carousel.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">Home</a>
+                <a class="navbar-item" href="building_instruction.html">Building Instructions</a>
+                <a class="navbar-item" href="other_projects.html">Other Projects</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column has-text-centered">
+                        <h1 class="title is-1 publication-title">BricksRL: A Platform for Democratizing Robotics and
+                            Reinforcement Learning Research and Education with LEGO</h1>
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block">
+                                <a href="mailto:sebastian.dittert@upf.edu">Sebastian Dittert</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                                <a href="mailto:vincentmoens@gmail.com">Vincent Moens</a><sup>3,4</sup>,</span>
+                            <span class="author-block">
+                                <a href="mailto:g.defabritiis@gmail.com">Gianni De Fabritiis</a><sup>1,2</sup>
+                            </span>
+                        </div>
+
+                        <div class="is-size-5 publication-authors">
+                            <span class="author-block"><sup>1</sup>Universitat Pompeu Fabra,</span>
+                            <span class="author-block"><sup>2</sup>ICREA</span>
+                            <span class="author-block"><sup>3</sup>PyTorch Team</span>
+                            <span class="author-block"><sup>4</sup>Meta</span>
+                        </div>
+
+                        <div class="column has-text-centered">
+                            <div class="publication-links">
+                                <!-- PDF Link. -->
+                                <!--
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/pdf/2011.12948"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fas fa-file-pdf"></i>
+                                        </span>
+                                        <span>Paper</span>
+                                    </a>-->
+                                </span>
+                                <span class="link-block">
+                                    <a href="https://arxiv.org/abs/2011.12948"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="ai ai-arxiv"></i>
+                                        </span>
+                                        <span>arXiv</span>
+                                    </a>
+                                </span>
+                                <!-- Video Link. -->
+                                <!--
+                                <span class="link-block">
+                                    <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>Video</span>
+                                    </a>
+                                </span>
+                                -->
+                                <!-- Code Link. -->
+                                <span class="link-block">
+                                    <a href="https://github.com/google/nerfies"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="fab fa-github"></i>
+                                        </span>
+                                        <span>Code</span>
+                                    </a>
+                                </span>
+                                <!-- Dataset Link. -->
+                                <!--
+                                <span class="link-block">
+                                    <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                                        class="external-link button is-normal is-rounded is-dark">
+                                        <span class="icon">
+                                            <i class="far fa-images"></i>
+                                        </span>
+                                        <span>Data</span>
+                                        -->
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- First Video 
+    <section class="hero teaser">
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <video  class="gdriveVideo" preload="auto" controls> 
+                    <source src="https://drive.google.com/uc?export=download&id=1Vkl_6jrd5ad0Gt0WWQd_pcaQUFrLLR5m" type="video/mp4">
+                </video>
+                <h2 class="subtitle has-text-centered">
+                    <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
+                    free-viewpoint
+                    portraits.
+                </h2>
+            </div>
+        </div>
+    </section>
+    -->
+
+
+    <!-- Video Selection Carousel-->
+    <!--
+    <section class="hero is-light is-small">
+        <div class="hero-body">
+            <div class="container">
+                <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-steve">
+                        <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/steve.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-chair-tp">
+                        <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/chair-tp.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-shiba">
+                        <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/shiba.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-fullbody">
+                        <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/fullbody.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-blueshirt">
+                        <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/blueshirt.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-mask">
+                        <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/mask.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-coffee">
+                        <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/coffee.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="item item-toby">
+                        <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+                            <source src="./static/videos/toby2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <!--/ Robot Preview -->
+    <section class="robot-gallery">
+        <div class="robot-gallery-container">
+            <div class="robot-container">
+                <img src="./static/images/2Wheeler_new.jpg" alt="2Wheeler" class="robot-image">
+                <img src="./static/images/roboarm_new.jpg" alt="RoboArm" class="robot-image">
+                <img src="./static/images/walker_new.jpg" alt="Walker" class="robot-image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container is-max-desktop">
+            <!-- Abstract. -->
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Abstract</h2>
+                    <div class="content has-text-justified">
+                        <p>
+                            We present BricksRL, a platform designed to democratize access to robotics for reinforcement
+                            learning research and education. BricksRL facilitates the creation, design, and training of
+                            custom LEGO robots in the real world by interfacing them with the TorchRL library for
+                            reinforcement learning agents. The integration of TorchRL with the LEGO hubs, via Bluetooth
+                            bidirectional communication, enables state-of-the-art reinforcement learning training on
+                            GPUs for a wide variety of LEGO builds. This offers a flexible and cost-efficient approach
+                            for scaling and also provides a robust infrastructure for robot-environment-algorithm
+                            communication. We present various experiments across tasks and robot configurations,
+                            providing built plans and training results. Furthermore, we demonstrate that inexpensive
+                            LEGO robots can be trained end-to-end in the real world to achieve simple tasks, with
+                            training times typically under 120 minutes on a normal laptop. Moreover, we show how users
+                            can extend the capabilities, exemplified by the successful integration of non-LEGO sensors.
+                            By enhancing accessibility to both robotics and reinforcement learning, BricksRL establishes
+                            a strong foundation for democratized robotic learning in research and educational settings.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--/ Abstract. -->
+
+
+            <!--
+            Paper video.
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Video</h2>
+                    <div class="publication-video">
+                        <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            Paper video.
+        </div>
+        -->
+    </section>
+
+    <section class="hero teaser">
+
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h2 class="title is-3">RoboArm</h2>
+                <div class="video-container">
+                    <!-- local video-->
+                    <video class="gdriveVideo" preload="auto" autoplay muted loop playsinline controls>
+                        <source src="./static/videos/RoboarmReal_eval_goal_positions_v0.2.mp4" type="video/mp4">
+                    </video>
+                    
+                    <!-- local video
+                    <iframe src="https://drive.google.com/file/d/1Vkl_6jrd5ad0Gt0WWQd_pcaQUFrLLR5m/preview"
+                        title="Google Drive video player" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen autoplay loop></iframe>
+                    -->
+                    <video class="gdriveVideo" preload="auto" autoplay muted loop playsinlin controls>
+                        <source src="./static/videos/RoboarmSim_eval_goal_positions_v0.2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    <span class="roboarm_example">The videos display the evaluation of two SAC agents: one trained
+                        entirely in the
+                        real-world environment, RoboArm-v0 (left), and another in the simulation environment,
+                        RoboArmSim-v0 (right). Displayed at the top of the video are four goal positions, selected to
+                        evaluate the effectiveness of the trained policies, which the agent must reach to demonstrate
+                        task completion.
+                </h2>
+                <div class="roboarm-result-container">
+                    <img src="./static/plots/RoboArm/roboarm_combined_title.png" alt="RoboArm Combined"
+                        class="roboarm-result-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero teaser">
+
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h2 class="title is-3">RoboArm Mixed Observation</h2>
+                <div class="video-container">
+                    <video class="gdriveVideo" preload="auto" autoplay muted loop playsinline controls>
+                        <source src="./static/videos/SAC_Evaluation.mp4" type="video/mp4">
+                    </video>
+
+                    <img src="./static/plots/RoboArm/roboarm_mixed_title.png" alt="RoboArm Combined"
+                        class="roboarm-result-image">
+
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    <span class="roboarm_example">This video (left) presents sequences of successive evaluation trials
+                        of the
+                        SAC agent in the RoboArm-mixed-v0 environment, which integrates direct sensor information of the
+                        robot arm angles and image inputs. The objective is to move the red ball, held by the robotic
+                        arm, to a randomly sampled target position indicated by a green dot in the image.
+                        Training performance (right) of the RoboArm robot in the RoboArm_mixed-v0 environment, showing
+                        both the
+                        reward and the number of episode steps required to reach the target location.
+
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero teaser">
+
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h2 class="title is-3">Walker</h2>
+                <div class="video-container">
+                    <video class="gdriveVideo" preload="auto" autoplay muted loop playsinline controls>
+                        <source src="./static/videos/droq_walker_real.mp4" type="video/mp4">
+                    </video>
+                    <video class="gdriveVideo" preload="auto" autoplay muted loop playsinlin controls>
+                        <source src="./static/videos/droq_walker_sim.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    <span class="roboarm_example">This example features a DroQ agent trained in the Walker-v0
+                        environment, which is directly implemented in the real world (left), and a DroQ agent trained in
+                        the WalkerSim-v0 simulation (right). The comparison demonstrates a successful
+                        simulation-to-reality (sim2real) transfer of the policy, where both agents are tasked with
+                        learning a forward-moving walking gait.
+
+
+                </h2>
+                <div class="roboarm-result-container">
+                    <img src="./static/plots/Walker/Walker_title.png" alt="RoboArm Combined"
+                        class="roboarm-result-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero teaser">
+
+        <div class="container is-max-desktop">
+            <div class="hero-body">
+                <h2 class="title is-3">2Wheeler</h2>
+                <div class="video-container">
+                    <video class="gdriveVideo" preload="auto" autoplay muted loop playsinline controls>
+                        <source src="./static/videos/sac_runaway.mp4" type="video/mp4">
+                    </video>
+                    <video class="gdriveVideo" preload="auto" autoplay muted loop playsinlin controls>
+                        <source src="./static/videos/spinning_td3.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <h2 class="subtitle has-text-centered">
+                    <span class="roboarm_example">Evaluating a trained SAC agent in the RunAway-v0 environment and a TD3
+                        agent in the Spinning-v0 environment, each performing simple yet distinct tasks. In RunAway-v0,
+                        the SAC agent's objective is to maximize the distance measured by an Ultrasonic sensor.
+                        Meanwhile, in Spinning-v0, the TD3 agent's task is to turn the 2Wheeler left or right based on
+                        indicators provided to the agent.
+
+
+
+
+                </h2>
+                <div class="roboarm-result-container">
+                    <img src="./static/plots/2Wheeler/2Wheeler_title.png" alt="RoboArm Combined"
+                        class="roboarm-result-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container is-max-desktop">
+
+            <div class="columns is-centered">
+
+                <!-- Concurrent Work. 
+            <div class="columns is-centered">
+                <div class="column is-full-width">
+                    <h2 class="title is-3">Related Links</h2>
+
+                    <div class="content has-text-justified">
+                        <p>
+                            There's a lot of excellent work that was introduced around the same time as ours.
+                        </p>
+                        <p>
+                            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a>
+                            introduces an idea similar to our windowed position encoding for coarse-to-fine
+                            optimization.
+                        </p>
+                        <p>
+                            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a
+                                href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+                            both use deformation fields to model non-rigid scenes.
+                        </p>
+                        <p>
+                            Some works model videos with a NeRF by directly modulating the density, such as <a
+                                href="https://video-nerf.github.io/">Video-NeRF</a>, <a
+                                href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a
+                                href="https://neural-3d-video.github.io/">DyNeRF</a>
+                        </p>
+                        <p>
+                            There are probably many more by the time you are reading this. Check out <a
+                                href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF
+                                papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's
+                                curated list of NeRF papers</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            Concurrent Work. -->
+
+            </div>
+    </section>
+
+
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+            <h2 class="title">BibTeX</h2>
+            <pre><code>@article{sedi2024bricksrl,
+  author    = {Sebastian Dittert and Vincent Moens and Gianni De Fabritiis},
+  title     = {BricksRL: A Platform for Democratizing Robotics and
+    Reinforcement Learning Research and Education with LEGO},
+  journal   = {NeurIPS},
+  year      = {2024},
+}</code></pre>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <a class="icon-link" href="./static/videos/nerfies_paper.pdf">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="columns is-centered">
+                <div class="column is-8">
+                    <div class="content">
+                        <p>
+                            This website is licensed under a <a rel="license"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                        </p>
+                        <p>
+                            This means you are free to borrow the <a
+                                href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+                            we just ask that you link back to this page in the footer.
+                            Please remember to remove the analytics code included in the header of the website which
+                            you do not want on your website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
