@@ -1,0 +1,28 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        lfs: true  # Fetch LFS files
+
+    - name: Set up Git LFS
+      run: |
+        git lfs install
+
+    - name: Build and test
+      run: |
+        # Your build and test commands here
+        echo "Building and testing"
