@@ -182,7 +182,7 @@
             <div class="hero-body">
                 <h2 class="title is-3">RoboArm Mixed Observation</h2>
                 <div class="video-container">
-                    <video id="roboarm_mixed" autoplay muted loop playsinline controls height="60%" width="60%">
+                    <video id="roboarm_mixed" class="gdriveVideo" autoplay muted loop playsinline controls>
                         <source src="./static/videos/SAC_Evaluation.mp4" type="video/mp4">
                     </video>
 
@@ -211,10 +211,10 @@
             <div class="hero-body">
                 <h2 class="title is-3">Walker</h2>
                 <div class="video-container">
-                    <video autoplay muted loop playsinline height="60%" width="60%">
+                    <video class="gdriveVideo" autoplay muted loop playsinline controls>
                         <source src="./static/videos/droq_walker_real.mp4" type="video/mp4">
                     </video>
-                    <video autoplay muted loop playsinlin height="60%" width="60%">
+                    <video class="gdriveVideo" autoplay muted loop playsinlin controls >
                         <source src="./static/videos/droq_walker_sim.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -241,10 +241,10 @@
             <div class="hero-body">
                 <h2 class="title is-3">2Wheeler</h2>
                 <div class="video-container">
-                    <video autoplay muted loop playsinline height="60%" width="60%">
+                    <video class="gdriveVideo" autoplay muted loop playsinline controls>
                         <source src="./static/videos/sac_runaway.mp4" type="video/mp4">
                     </video>
-                    <video autoplay muted loop playsinlin height="60%" width="60%">
+                    <video class="gdriveVideo" autoplay muted loop playsinlin controls >
                         <source src="./static/videos/spinning_td3.mp4" type="video/mp4">
                     </video>
                 </div>
@@ -254,9 +254,6 @@
                         the SAC agent's objective is to maximize the distance measured by an Ultrasonic sensor.
                         Meanwhile, in Spinning-v0, the TD3 agent's task is to turn the 2Wheeler left or right based on
                         indicators provided to the agent.
-
-
-
 
                 </h2>
                 <div class="roboarm-result-container">
