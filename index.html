@@ -30,22 +30,17 @@
 
 <body>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu">
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <div class="container">
+          <div class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="index.html">Home</a>
-                <a class="navbar-item" href="building_instruction.html">Building Instructions</a>
-                <a class="navbar-item" href="other_projects.html">Other Projects</a>
+              <a class="navbar-item" href="index.html">Home</a>
+              <a class="navbar-item" href="building_instruction.html">Building Instructions</a>
+              <a class="navbar-item" href="other_projects.html">Other Projects</a>
             </div>
+          </div>
         </div>
-    </nav>
+      </nav>
 
 
 
@@ -323,5 +318,49 @@
     </footer>
 
 </body>
+
+<style>
+    .navbar {
+      background-color: #f5f5f5;
+      border-radius: 25px;
+      margin-top: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      max-width: 30%; /* Decrease the width of the navbar */
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .navbar .container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .navbar-menu {
+      display: flex;
+      justify-content: center;
+      flex-grow: 0;
+    }
+  
+    .navbar-start {
+      display: flex;
+      justify-content: center;
+      margin-right: 0;
+    }
+  
+    .navbar-item {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #333;
+    }
+  
+    .navbar-item:hover {
+      background-color: #e8e8e8;
+    }
+  
+    body {
+      padding-top: 80px;
+    }
+  </style>
 
 </html>
