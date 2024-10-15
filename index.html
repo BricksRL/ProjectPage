@@ -23,6 +23,149 @@
     <script src="./static/js/bulma-slider.min.js"></script>
     <script src="./static/js/index.js"></script>
 
+    <style>
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .robot-gallery-container {
+                padding: 10px;
+            }
+            
+            .robot-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .robot-image {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                margin-bottom: 10px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .column {
+                padding: 10px;
+            }
+
+            .video-container {
+                flex-direction: column;
+            }
+
+            .video-wrapper {
+                max-width: 100%;
+            }
+
+            .navbar {
+                max-width: 90%;
+            }
+
+            .navbar-item {
+                font-size: 1rem;
+            }
+        }
+
+        .robot-gallery-container {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+        .robot-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .robot-image {
+            max-width: 60%;
+            height: auto;
+            margin: 0 5px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #f5f5f5;
+            border-radius: 25px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .navbar-menu {
+            display: flex;
+            justify-content: center;
+            flex-grow: 0;
+        }
+
+        .navbar-start {
+            display: flex;
+            justify-content: center;
+            margin-right: 0;
+        }
+
+        .navbar-item {
+            font-size: 1.0rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navbar-item:hover {
+            background-color: #e8e8e8;
+        }
+
+        body {
+            padding-top: 80px;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .video-wrapper {
+            flex: 1 1 45%;
+            max-width: 500px;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        #other-projects .video-wrapper {
+            flex: 1 1 30%;
+            max-width: 300px;
+        }
+
+        #other-projects .video-wrapper iframe {
+            height: 200px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -390,76 +533,6 @@
             </div>
         </div>
     </footer>
-
-    <style>
-        .navbar {
-            background-color: #f5f5f5;
-            border-radius: 25px;
-            margin-top: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            max-width: 30%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .navbar .container {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-
-        .navbar-menu {
-            display: flex;
-            justify-content: center;
-            flex-grow: 0;
-        }
-
-        .navbar-start {
-            display: flex;
-            justify-content: center;
-            margin-right: 0;
-        }
-
-        .navbar-item {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .navbar-item:hover {
-            background-color: #e8e8e8;
-        }
-
-        body {
-            padding-top: 80px;
-        }
-
-        .video-container {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .video-wrapper {
-            flex: 1 1 45%;
-            max-width: 500px;
-        }
-
-        .video-wrapper iframe {
-            width: 100%;
-            height: 300px;
-        }
-
-        #other-projects .video-wrapper {
-            flex: 1 1 30%;
-            max-width: 300px;
-        }
-
-        #other-projects .video-wrapper iframe {
-            height: 200px;
-        }
-    </style>
 
 </body>
 
